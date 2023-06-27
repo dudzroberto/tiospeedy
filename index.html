@@ -31,12 +31,6 @@
         font-size: 18px;
       }
 
-      @media (min-width: 1200px) {
-        .container {
-          max-width: 970px;
-        }
-      }
-
       p {
         font-weight: 300;
         color: #222;
@@ -50,6 +44,10 @@
 
       section {
         padding: 100px 0;
+      }
+
+      .head {
+        padding-top: 80px;
       }
 
       .slider {
@@ -66,7 +64,7 @@
         text-transform: uppercase;
         color: #1c1f26;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
       }
 
       .slider p {
@@ -82,8 +80,12 @@
         font-family: "TioBlack", Arial, sans-serif;
       }
 
+      .slider .tio-slider {
+        width: 100%;
+      }
+
       .chamada {
-        padding: 100px 0;
+        padding: 50px 0 100px;
       }
 
       .tio-um {
@@ -152,7 +154,6 @@
       }
 
       .trajetoria {
-        padding-bottom: 0;
         background-image: url(./assets/images/dots.png);
         background-position: center;
         background-size: cover;
@@ -190,10 +191,9 @@
       }
 
       .plano-box {
-        position: relative;
         padding: 50px;
         background-color: #fff;
-        height: 100%;
+        /* height: 100%; */
         text-align: left;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         border-radius: 30px;
@@ -210,12 +210,20 @@
         color: #1c1f26;
       }
 
-      .plano-box p {
+      .plano-box ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .plano-box li {
         font-size: 0.8em;
         line-height: 1.2em;
         text-align: left;
         color: #1c1f26;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
       .aprender {
@@ -287,21 +295,76 @@
         font-weight: 300;
         color: #fff;
       }
+      
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 970px;
+        }
+      }
+
+      @media (max-width: 970px) {
+        body {
+          font-size: 14px;
+        }
+        .tio-um {
+          padding-bottom: 30px;
+        }
+      }
+      
+      @media (max-width: 575px) {
+        body {
+          font-size: 12px;
+        }
+
+        section {
+          padding: 50px 0;
+        }
+
+        .head {
+          padding-top: 50px;
+          text-align: center;
+        }
+
+        .chamada {
+          padding: 20px 0;
+          text-align: center;
+        }
+
+        .chamada img {
+          height: 35px;
+        }
+
+        .slider h1 {
+          font-size: 3em;
+        }
+
+        .tio-intro {
+          width: 70%;
+          height: auto;
+          margin-bottom: 30px;
+        }
+      }
+
     </style>
   </head>
   <body>
     <section class="slider">
       <div class="container">
         <div class="row align-items-end">
-          <div class="col-6">
+          <div class="col-12">
+            <div class="head">
+              <img src="./assets/images/logo.png" height="40" alt="FUT 2023" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
             <div class="chamada">
               <img src="./assets/images/fut23.png" height="60" alt="FUT 2023" />
               <h1>Vem ser <span>Elite</span> com o Tio Speedy!</h1>
               <p>Planos a partir de <span>R$100/Mês</span>.</p>
             </div>
           </div>
-          <div class="col-6">
-            <img class="tio-um" src="./assets/images/tio-um.png" alt="Tio Speedy" />
+          <div class="col-xs-12 col-md-6 align-items-center">
+            <img class="tio-slider" src="./assets/images/tio-info.png" alt="Tio Speedy" />
           </div>
         </div>
       </div>
@@ -362,7 +425,7 @@
           </div>
           <div class="col-12">
             <div class="row align-items-center">
-              <div class="col-6">
+              <div class="col-xs-12 col-md-6">
                 <p>
                   Não basta apenas aprender no método tradicional, é necessário
                   conhecer exatamente quais são suas dificuldades,erros e
@@ -376,7 +439,7 @@
                   mais precisão os erros para que possam ser corrigidos.
                 </p>
               </div>
-              <div class="col-6">
+              <div class="col-xs-12 col-md-6">
                 <img src="./assets/images/heroescards.png" alt="Cards Heroes" />
               </div>
             </div>
@@ -390,7 +453,15 @@
           <div class="col-12 text-center">
             <h2>Quem vai te ajudar nessa trajetória</h2>
           </div>
-          <div class="col-6">
+          <div class="col-xs-12 col-md-6 text-center">
+            <img
+              class="tio-intro"
+              height="380"
+              src="./assets/images/tio-slider.png"
+              alt="Tio Speedy"
+            />
+          </div>
+          <div class="col-xs-12 col-md-6">
             <p>
               Migrando do PES, para o FIFA, no final do ano de 2013, Tio Speedy
               como é conhecido hoje, inicia sua carreira no FIFA, iniciando sua
@@ -409,8 +480,32 @@
               cada dia mais público.
             </p>
           </div>
-          <div class="col-6">
-            <img class="tio-um" src="./assets/images/tio-um.png" alt="Tio Speedy" />
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-xs-12 col-md-6">
+            <p>
+              Algum tempo se passou e, então, ao invés de continuar usando o seu
+              canal do youtube, passou a fazer lives para um público mais seleto
+              na Twitch, porém sempre com o intuito de compartilhar
+              conhecimento, dicas e ajudar aopróximo, trabalho esse que é feito
+              com muito amor e carinho até hoje. Começou seu trabalho de coach
+              no ano de 2019, onde vem trazendo todo esse conhecimento de forma
+              muito descontraída e simples de entender.
+            </p>
+            <p>
+              Todas as suas aulas são feitas com hora marcada, individual e
+              totalmente personalizada, para que o aluno aprenda de forma
+              definitiva que o jogo, quando bem jogado e estudado, não é um
+              bicho de 7 cabeças.
+            </p>
+            <p>
+              Hoje, no ano de 2023, o Tio Speedy conta com uma grande quantidade
+              de alunos e o mesmo carisma que iniciou sua carreira no ano de
+              2014.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img class="tio-um" src="./assets/images/tio-dois.png" alt="Tio Speedy" />
           </div>
         </div>
       </div>
@@ -422,26 +517,56 @@
             <div class="col-12">
               <h2>Escolha o plano que cabe melhor no seu bolso.</h2>
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-4">
               <div class="plano-box">
                 <img src="./assets/images/icones/bronze.png" alt="Bronze" />
                 <h3>Bronze</h3>
+                <ul>
+                  <li>
+                    Conversa inicial sem contar o tempo da aula; 1 jogo inicial
+                    para análise de gameplay;
+                  </li>
+                  <li>Orientações sobre erros e acertos na gameplay;</li>
+                  <li>1 jogo final para fixação das orientações;</li>
+                  <li>E muito mais.</li>
+                </ul>
+                <div>Investimento - R$100</div>
+                <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-4">
               <div class="plano-box">
                 <img src="./assets/images/icones/prata.png" alt="Prata" />
                 <h3>Prata</h3>
+                <ul>
+                  <li>Conversa inicial sem contar o tempo da aula;</li>
+                  <li>1 jogo inicial para análise de gameplay;</li>
+                  <li>Orientações sobre erros e acertos na gameplay;</li>
+                  <li>2 jogos finais para fixação das orientações;</li>
+                  <li>E muito mais.</li>
+                </ul>
+                <div>Investimento - R$200</div>
+                <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-4">
               <div class="plano-box">
                 <img src="./assets/images/icones/ouro.png" alt="Ouro" />
                 <h3>Ouro</h3>
+                <ul>
+                  <li>Conversa inicial sem contar o tempo da aula;</li>
+                  <li>1 jogo inicial para análise de gameplay;</li>
+                  <li>
+                    Orientações sobre erros e acertos na gameplay, análises de
+                    táticas personalizadas;
+                  </li>
+                  <li>Trabalho ofensivo e defensivo, dribles eficazes;</li>
+                  <li>5 jogos finais para fixação das orientações;</li>
+                  <li>E muito mais</li>
+                </ul>
+                <div>Investimento - R$300</div>
+                <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
-            </div>
-            <div class="col-12">
-              <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
             </div>
           </div>
         </div>
@@ -455,10 +580,10 @@
           </div>
           <div class="col-12">
             <div class="row align-items-center">
-              <div class="col-6">
+              <div class="col-xs-12 col-md-6">
                 <img src="./assets/images/controles.png" alt="controles" />
               </div>
-              <div class="col-6">
+              <div class="col-xs-12 col-md-6">
                 <h3>Tudo que você precisa,você vai aprender aqui.</h3>
                 <p>
                   Se dedique, estude, tire todas as suas dúvidas e pare de
@@ -469,7 +594,7 @@
                   Estamos aqui para te ensinar com todo o carinho tudo que há de
                   melhor no Fifa 2023.
                 </p>
-                <br>
+                <br />
                 <a
                   class="btn-basic"
                   href="https://api.whatsapp.com/send?phone=5511993005615"
@@ -487,9 +612,9 @@
           <div class="col-12">
             <h2>Saiba o que estão falando sobre nós</h2>
           </div>
-          <div class="col-4"><p>Depoimentos 1</p></div>
-          <div class="col-4"><p>Depoimentos 2</p></div>
-          <div class="col-4"><p>Depoimentos 3</p></div>
+          <div class="col-xs-12 col-md-4"><p>Depoimentos 1</p></div>
+          <div class="col-xs-12 col-md-4"><p>Depoimentos 2</p></div>
+          <div class="col-xs-12 col-md-4"><p>Depoimentos 3</p></div>
         </div>
       </div>
     </section>
