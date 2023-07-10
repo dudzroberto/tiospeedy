@@ -51,7 +51,7 @@
       }
 
       .slider {
-        background-image: url(./assets/images/slider.jpg);
+        background-image: url(./assets/images/slider2.jpg);
         background-size: cover;
         background-position: center;
         /* background-size: cover; */
@@ -191,7 +191,11 @@
       }
 
       .plano-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 50px;
+        height: 100%;
         background-color: #fff;
         /* height: 100%; */
         text-align: left;
@@ -211,11 +215,8 @@
       }
 
       .plano-box ul {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0 0 30px 0;
       }
 
       .plano-box li {
@@ -290,12 +291,26 @@
       }
 
       footer {
-        padding: 20px 0;
+        padding: 40px 0;
         background-color: #1c1f26;
         font-weight: 300;
         color: #fff;
       }
-      
+
+      footer .link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      footer a {
+        color: #fff;
+      }
+
+      footer a:hover {
+        color: #ff5e0c;
+      }
+
       @media (min-width: 1200px) {
         .container {
           max-width: 970px;
@@ -310,7 +325,7 @@
           padding-bottom: 30px;
         }
       }
-      
+
       @media (max-width: 575px) {
         body {
           font-size: 12px;
@@ -344,7 +359,6 @@
           margin-bottom: 30px;
         }
       }
-
     </style>
   </head>
   <body>
@@ -364,7 +378,11 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 align-items-center">
-            <img class="tio-slider" src="./assets/images/tio-info.png" alt="Tio Speedy" />
+            <img
+              class="tio-slider"
+              src="./assets/images/tio-info.png"
+              alt="Tio Speedy"
+            />
           </div>
         </div>
       </div>
@@ -481,7 +499,7 @@
             </p>
           </div>
         </div>
-        <div class="row" style="margin-top: 30px;">
+        <div class="row" style="margin-top: 30px">
           <div class="col-xs-12 col-md-6">
             <p>
               Algum tempo se passou e, então, ao invés de continuar usando o seu
@@ -505,7 +523,11 @@
             </p>
           </div>
           <div class="col-xs-12 col-md-6">
-            <img class="tio-um" src="./assets/images/tio-dois.png" alt="Tio Speedy" />
+            <img
+              class="tio-um"
+              src="./assets/images/tio-dois.png"
+              alt="Tio Speedy"
+            />
           </div>
         </div>
       </div>
@@ -519,52 +541,55 @@
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="plano-box">
-                <img src="./assets/images/icones/bronze.png" alt="Bronze" />
-                <h3>Bronze</h3>
-                <ul>
-                  <li>
-                    Conversa inicial sem contar o tempo da aula; 1 jogo inicial
-                    para análise de gameplay;
-                  </li>
-                  <li>Orientações sobre erros e acertos na gameplay;</li>
-                  <li>1 jogo final para fixação das orientações;</li>
-                  <li>E muito mais.</li>
-                </ul>
-                <div>Investimento - R$100</div>
+                <div>
+                  <img src="./assets/images/icones/bronze.png" alt="Bronze" />
+                  <h3>Bronze</h3>
+                  <ul>
+                    <li>
+                      Conversa inicial sem contar o tempo da aula; 1 jogo
+                      inicial para análise de gameplay;
+                    </li>
+                    <li>Orientações sobre erros e acertos na gameplay;</li>
+                    <li>1 jogo final para fixação das orientações;</li>
+                    <li>E muito mais.</li>
+                  </ul>
+                </div>
                 <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="plano-box">
-                <img src="./assets/images/icones/prata.png" alt="Prata" />
-                <h3>Prata</h3>
-                <ul>
-                  <li>Conversa inicial sem contar o tempo da aula;</li>
-                  <li>1 jogo inicial para análise de gameplay;</li>
-                  <li>Orientações sobre erros e acertos na gameplay;</li>
-                  <li>2 jogos finais para fixação das orientações;</li>
-                  <li>E muito mais.</li>
-                </ul>
-                <div>Investimento - R$200</div>
+                <div>
+                  <img src="./assets/images/icones/prata.png" alt="Prata" />
+                  <h3>Prata</h3>
+                  <ul>
+                    <li>Conversa inicial sem contar o tempo da aula;</li>
+                    <li>1 jogo inicial para análise de gameplay;</li>
+                    <li>Orientações sobre erros e acertos na gameplay;</li>
+                    <li>2 jogos finais para fixação das orientações;</li>
+                    <li>E muito mais.</li>
+                  </ul>
+                </div>
                 <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="plano-box">
-                <img src="./assets/images/icones/ouro.png" alt="Ouro" />
-                <h3>Ouro</h3>
-                <ul>
-                  <li>Conversa inicial sem contar o tempo da aula;</li>
-                  <li>1 jogo inicial para análise de gameplay;</li>
-                  <li>
-                    Orientações sobre erros e acertos na gameplay, análises de
-                    táticas personalizadas;
-                  </li>
-                  <li>Trabalho ofensivo e defensivo, dribles eficazes;</li>
-                  <li>5 jogos finais para fixação das orientações;</li>
-                  <li>E muito mais</li>
-                </ul>
-                <div>Investimento - R$300</div>
+                <div>
+                  <img src="./assets/images/icones/ouro.png" alt="Ouro" />
+                  <h3>Ouro</h3>
+                  <ul>
+                    <li>Conversa inicial sem contar o tempo da aula;</li>
+                    <li>1 jogo inicial para análise de gameplay;</li>
+                    <li>
+                      Orientações sobre erros e acertos na gameplay, análises de
+                      táticas personalizadas;
+                    </li>
+                    <li>Trabalho ofensivo e defensivo, dribles eficazes;</li>
+                    <li>5 jogos finais para fixação das orientações;</li>
+                    <li>E muito mais</li>
+                  </ul>
+                </div>
                 <a class="btn-full" href="#fale-com-o-tio">Assinar Agora</a>
               </div>
             </div>
@@ -598,7 +623,7 @@
                 <a
                   class="btn-basic"
                   href="https://api.whatsapp.com/send?phone=5511993005615"
-                  ><i class="bi bi-whatsapp"></i> Fale com o Tio</a
+                  ><i class="bi bi-whatsapp"></i> Fale com o Tio Speedy</a
                 >
               </div>
             </div>
@@ -612,16 +637,61 @@
           <div class="col-12">
             <h2>Saiba o que estão falando sobre nós</h2>
           </div>
-          <div class="col-xs-12 col-md-4"><p>Depoimentos 1</p></div>
-          <div class="col-xs-12 col-md-4"><p>Depoimentos 2</p></div>
-          <div class="col-xs-12 col-md-4"><p>Depoimentos 3</p></div>
+          <div class="col-xs-12 col-md-4 offset-md-2">
+            <div>
+              <video
+                style="max-width: 100%"
+                src="assets/videos/aldo.mp4"
+                controls
+              ></video>
+              <h3>José Aldo</h3>
+              <p>Lutados MMA</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div>
+              <video
+                style="max-width: 100%"
+                src="assets/videos/tinga.mp4"
+                controls
+              ></video>
+              <h3>Tinga</h3>
+              <p>Jogador de Futebol</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="container text-center">
+      <div class="container">
         <div class="row">
-          <div class="col-12">Todos os direitos reservados.</div>
+          <div class="col-12">
+            <div class="link">
+              <img
+                src="./assets/images/logobw.png"
+                width="200"
+                alt="Tio Speedy Coach"
+              />
+              <div>
+                <a href="https://www.twitch.tv/tiospeedy"
+                  ><i class="bi bi-twitch"></i
+                ></a>
+                <a href="https://www.youtube.com/@tiospeedy1978"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a href="https://www.instagram.com/tiospeedy/"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="https://www.tiktok.com/@tiospeedy"
+                  ><i class="bi bi-tiktok"></i
+                ></a>
+                <a href="https://www.facebook.com/speedyzoneface"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12 text-center">Todos os direitos reservados.</div> -->
         </div>
       </div>
     </footer>
