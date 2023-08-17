@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tio Speedy Fifa Coach | Vem ser elite com o tio!</title>
+    <!-- Meta tags Open Graph -->
+    <meta property="og:title" content="Vem ser elite com o tio Speedy">
+    <meta property="og:description" content="Tudo que você precisa,você vai aprender aqui.">
+    <meta property="og:image" content="http://www.tiospeedy.com.br/assets/images/link.png">
+    <meta property="og:url" content="http://www.tiospeedy.com.br">
+    <meta property="og:type" content="website">
+    <!-- Fim das meta tags Open Graph -->
     <link
       rel="preload"
       href="./assets/fonts/NeuePlak-ExtraBlack.ttf"
@@ -26,6 +33,11 @@
         font-family: "TioBlack";
         src: url("./assets/fonts/NeuePlak-ExtraBlack.ttf") format("truetype");
       }
+      
+      @font-face {
+        font-family: "FC24-Black";
+        src: url("./assets/fonts/CruyffSans-Bold.otf") format("opentype");
+      }
 
       body {
         font-size: 18px;
@@ -39,7 +51,7 @@
       h1,
       h2,
       h3 {
-        font-family: "TioBlack", Arial, sans-serif;
+        font-family: "FC24-Black", Arial, sans-serif;
       }
 
       section {
@@ -51,9 +63,9 @@
       }
 
       .slider {
-        background-image: url(./assets/images/slider2.jpg);
+        background-image: url(./assets/images/stadiumblack.png);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         /* background-size: cover; */
         padding: 0;
       }
@@ -62,18 +74,19 @@
         font-size: 4em;
         line-height: 1em;
         text-transform: uppercase;
-        color: #1c1f26;
+        color: #FFF;
+        margin-top: 20px;
         margin-bottom: 20px;
         /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
       }
 
       .slider p {
         text-transform: uppercase;
-        color: #1c1f26;
+        color: #FFF;
       }
 
       .slider h1 span {
-        color: #ff5e0c;
+        color: #07f468;
       }
 
       .slider p span {
@@ -93,7 +106,9 @@
       }
 
       .aprenda {
-        background-color: #f8eede;
+        background-image: url(./assets/images/triangulosb.png);
+        background-position: center;
+        background-size: cover;
       }
 
       .aprenda h2 {
@@ -132,7 +147,7 @@
       }
 
       .metodo {
-        background-image: url(./assets/images/heroes.jpg);
+        background-image: url(./assets/images/heroes2.jpg);
         background-position: center;
         background-size: cover;
       }
@@ -154,7 +169,7 @@
       }
 
       .trajetoria {
-        background-image: url(./assets/images/dots.png);
+        background-image: url(./assets/images/triangulosb.png);
         background-position: center;
         background-size: cover;
       }
@@ -173,7 +188,7 @@
 
       .plano {
         padding: 0;
-        background-image: url(./assets/images/plano.jpg);
+        background-image: url(./assets/images/plano2.jpg);
         background-position: center;
         background-size: cover;
       }
@@ -228,7 +243,7 @@
       }
 
       .aprender {
-        background-image: url(./assets/images/dots.png);
+        background-image: url(./assets/images/triangulos.jpg);
         background-position: center;
         background-size: cover;
       }
@@ -236,8 +251,12 @@
       .aprender h2 {
         font-size: 2em;
         text-transform: uppercase;
-        color: #1c1f26;
+        color: #07f468;
         margin-bottom: 40px;
+      }
+
+      .aprender h3, .aprender p {
+        color: #FFF;
       }
 
       .aprender img {
@@ -245,7 +264,7 @@
       }
 
       .falando {
-        background-color: #ff5e0c;
+        background-color: #07f468;
       }
 
       .falando h2 {
@@ -265,7 +284,7 @@
         font-family: "TioBlack", Arial, sans-serif;
         font-size: 0.8;
         text-decoration: none;
-        background-color: #ff5e0c;
+        background-color: #07f468;
         color: #1c1f26;
         padding: 10px 20px;
         text-transform: uppercase;
@@ -277,7 +296,7 @@
         font-family: "TioBlack", Arial, sans-serif;
         font-size: 0.8;
         text-decoration: none;
-        background-color: #ff5e0c;
+        background-color: #07f468;
         color: #1c1f26;
         padding: 10px 20px;
         text-transform: uppercase;
@@ -292,7 +311,7 @@
 
       footer {
         padding: 40px 0;
-        background-color: #1c1f26;
+        background-color: #161616;
         font-weight: 300;
         color: #fff;
       }
@@ -309,7 +328,7 @@
       }
 
       footer a:hover {
-        color: #ff5e0c;
+        color: #07f468;
       }
 
       @media (min-width: 1200px) {
@@ -373,7 +392,7 @@
           </div>
           <div class="col-xs-12 col-md-6">
             <div class="chamada">
-              <img src="./assets/images/fut23.png" height="60" alt="FUT 2023" />
+              <img src="./assets/images/fc24-ut-logo.png" height="40" alt="FUT 2023" />
               <h1>Vem ser <span>Elite</span> com o Tio Speedy!</h1>
               <p>Escolha o <span>plano ideal</span>.</p>
             </div>
@@ -447,7 +466,7 @@
               <div class="col-xs-12 col-md-6">
                 <p>
                   Não basta apenas aprender no método tradicional, é necessário
-                  conhecer exatamente quais são suas dificuldades,erros e
+                  conhecer exatamente quais são suas dificuldades, erros e
                   acertos.
                 </p>
                 <p>
@@ -459,7 +478,7 @@
                 </p>
               </div>
               <div class="col-xs-12 col-md-6">
-                <img src="./assets/images/heroescards.png" alt="Cards Heroes" />
+                <img src="./assets/images/heroescards2.png" alt="Cards Heroes" />
               </div>
             </div>
           </div>
@@ -476,7 +495,7 @@
             <img
               class="tio-intro"
               height="380"
-              src="./assets/images/tio-slider.png"
+              src="./assets/images/tio-card.png"
               alt="Tio Speedy"
             />
           </div>
@@ -646,7 +665,7 @@
                 controls
               ></video>
               <h3>José Aldo</h3>
-              <p>Lutados MMA</p>
+              <p>Lutador MMA</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
@@ -669,7 +688,7 @@
           <div class="col-12">
             <div class="link">
               <img
-                src="./assets/images/logobw.png"
+                src="./assets/images/logo.png"
                 width="200"
                 alt="Tio Speedy Coach"
               />
